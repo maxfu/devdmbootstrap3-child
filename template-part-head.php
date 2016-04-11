@@ -1,6 +1,7 @@
 <?php global $dm_settings; ?>
+<?php global $maxwell_options; ?>
 
-<div class="container dmbs-container">
+<div class="container<?php if ( $maxwell_options['fluid_container'] == 'on') echo '-fluid';?> dmbs-container">
 
 <?php if ($dm_settings['show_header'] != 0) : ?>
 

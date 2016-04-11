@@ -1,9 +1,11 @@
 
 <?php if ( has_nav_menu( 'main_menu' ) ) : ?>
 
+    <?php global $maxwell_options; ?>
+
     <div class="row dmbs-top-menu">
         <nav class="navbar navbar-inverse" role="navigation">
-            <div class="container">
+            <div class="container<?php if ( $maxwell_options['fluid_container'] == 'on') echo '-fluid';?>">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
                         <span class="sr-only"><?php _e('Toggle navigation','devdmbootstrap3'); ?></span>
