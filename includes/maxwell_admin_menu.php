@@ -6,7 +6,7 @@
  $pages = array(
    'maxwell_options'   => array(
      'page_title'    => __( 'Maxwell Options', 'devdmbootstrap3' ),
-     'position'      => 1,
+     'position'      => 4,
      'sections'      => array(
 //       'section-one'   => array(
 //         'title'         => __( 'Homepage Options', 'devdmbootstrap3' ),
@@ -80,12 +80,28 @@
 //             'type'          => 'checkbox',
 //             'text'          => __( 'Display contact information in Team Page' ),
 //           ),
-//           'menu_search'    => array(
-//             'title'         => __( 'Display Search on Main Menu' ),
-//             'id'            => 'menu_search',
-//             'type'          => 'checkbox',
-//             'text'          => __( 'Display Search on Main Menu. If thrid party menu search plugin installed, uncheck this' ),
-//           ),
+           'complex_header'  => array(
+             'title'         => __( 'Display Complex Header' ),
+             'id'            => 'complex_header',
+             'type'          => 'checkbox',
+             'text'          => __( 'Display Complex Header with Header Image and Menu in the same row. This will bypass the DmSettings Display Header.' ),
+           ),
+           'radio'           => array(
+             'title'         => __( 'Navbar Style', 'devdmbootstrap3' ),
+             'id'            => 'navebar_style',
+             'type'          => 'radio',
+             'choices'       => array(
+               'default'    => __( 'Default style, light gray', 'devdmbootstrap3' ),
+               'inverse'    => __( 'Inverse style, almost black', 'devdmbootstrap3' ),
+               'custom'     => __( 'Customed style, can be customed', 'devdmbootstrap3' ),
+             ),
+           ),
+           'menu_search'    => array(
+             'title'         => __( 'Display Search on Main Menu' ),
+             'id'            => 'menu_search',
+             'type'          => 'checkbox',
+             'text'          => __( 'Display Search on Main Menu. If thrid party menu search plugin installed, uncheck this' ),
+           ),
            'comp_tel'        => array(
              'title'         => __( 'Company Telephone', 'devdmbootstrap3' ),
              'id'            => 'company_tel',

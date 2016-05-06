@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
-<?php get_template_part('template-part', 'head'); ?>
-
-<?php get_template_part('template-part', 'topnav'); ?>
+<?php global $maxwell_options; ?>
+<?php if( $maxwell_options['complex_header'] == 'on' ) : ?>
+  <?php get_template_part('template-part', 'complexhead'); ?>
+<?php else : ?>
+  <?php get_template_part('template-part', 'head'); ?>
+  <?php get_template_part('template-part', 'topnav'); ?>
+<?php endif; ?>
 
 <!-- start content container -->
 <div class="row dmbs-content">
