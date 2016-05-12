@@ -8,7 +8,52 @@
      'page_title'    => __( 'Maxwell Options', 'devdmbootstrap3' ),
      'position'      => 4,
      'sections'      => array(
-//       'section-one'   => array(
+       'section-one'   => array(
+         'title'         => __( 'Layout Options', 'devdmbootstrap3' ),
+         'fields'        => array(
+           'fluid_container' => array(
+             'title'         => __( 'Use Fluid Containers', 'devdmbootstrap3' ),
+             'id'            => 'fluid_container',
+             'type'          => 'checkbox',
+             'text'          => __( 'Check to use full-width fluid containers on pages.', 'devdmbootstrap3' ),
+           ),
+           'header_container' => array(
+             'title'         => __( 'Header in main container', 'devdmbootstrap3' ),
+             'id'            => 'header_container',
+             'type'          => 'checkbox',
+             'text'          => __( 'Check to put header in the main container on pages.', 'devdmbootstrap3' ),
+           ),
+           'footer_container' => array(
+             'title'         => __( 'Footer in main container', 'devdmbootstrap3' ),
+             'id'            => 'footer_container',
+             'type'          => 'checkbox',
+             'text'          => __( 'Check to put footer in the main container on pages.', 'devdmbootstrap3' ),
+           ),
+           'complex_header'  => array(
+             'title'         => __( 'Display Complex Header' ),
+             'id'            => 'complex_header',
+             'type'          => 'checkbox',
+             'text'          => __( 'Display Complex Header with Header Image and Menu in the same row. This will bypass the DmSettings Display Header.' ),
+           ),
+           'radio'           => array(
+             'title'         => __( 'Navbar Style', 'devdmbootstrap3' ),
+             'id'            => 'navebar_style',
+             'type'          => 'radio',
+             'choices'       => array(
+               'default'    => __( 'Default style, light gray', 'devdmbootstrap3' ),
+               'inverse'    => __( 'Inverse style, almost black', 'devdmbootstrap3' ),
+               'custom'     => __( 'Customed style, can be customed', 'devdmbootstrap3' ),
+             ),
+           ),
+           'menu_search'    => array(
+             'title'         => __( 'Display Search on Main Menu' ),
+             'id'            => 'menu_search',
+             'type'          => 'checkbox',
+             'text'          => __( 'Display Search on Main Menu. If thrid party menu search plugin installed, uncheck this' ),
+           ),
+         ),
+       ),
+//       'section-two'   => array(
 //         'title'         => __( 'Homepage Options', 'devdmbootstrap3' ),
 //         'fields'        => array(
 //           'act_pic'         => array(
@@ -63,57 +108,35 @@
 //             'type'          => 'url',
 //             'placeholder'   => 'Link for Home Slider 3',
 //           ),
-//         ),
-//       ),
-       'section_two'   => array(
-         'title'         => __( 'Website Options', 'devdmbootstrap3' ),
-         'fields'        => array(
-           'fluid_container' => array(
-             'title'         => __( 'Use Fluid Containers', 'devdmbootstrap3' ),
-             'id'            => 'fluid_container',
-             'type'          => 'checkbox',
-             'text'          => __( 'Check to use full-width fluid containers on pages.', 'devdmbootstrap3' ),
-           ),
 //           'disp_contact'    => array(
 //             'title'         => __( 'Staff Contact Information' ),
 //             'id'            => 'display_contact',
 //             'type'          => 'checkbox',
 //             'text'          => __( 'Display contact information in Team Page' ),
 //           ),
-           'complex_header'  => array(
-             'title'         => __( 'Display Complex Header' ),
-             'id'            => 'complex_header',
-             'type'          => 'checkbox',
-             'text'          => __( 'Display Complex Header with Header Image and Menu in the same row. This will bypass the DmSettings Display Header.' ),
-           ),
-           'radio'           => array(
-             'title'         => __( 'Navbar Style', 'devdmbootstrap3' ),
-             'id'            => 'navebar_style',
-             'type'          => 'radio',
-             'choices'       => array(
-               'default'    => __( 'Default style, light gray', 'devdmbootstrap3' ),
-               'inverse'    => __( 'Inverse style, almost black', 'devdmbootstrap3' ),
-               'custom'     => __( 'Customed style, can be customed', 'devdmbootstrap3' ),
-             ),
-           ),
-           'menu_search'    => array(
-             'title'         => __( 'Display Search on Main Menu' ),
-             'id'            => 'menu_search',
-             'type'          => 'checkbox',
-             'text'          => __( 'Display Search on Main Menu. If thrid party menu search plugin installed, uncheck this' ),
-           ),
+         ),
+       ),
+       'section-three'   => array(
+         'title'         => __( 'Business Options', 'devdmbootstrap3' ),
+         'fields'        => array(
            'comp_tel'        => array(
              'title'         => __( 'Company Telephone', 'devdmbootstrap3' ),
              'id'            => 'company_tel',
              'type'          => 'tel',
              'placeholder'   => '61-412-901-396',
            ),
-//           'comp_fax'        => array(
-//             'title'         => __( 'Company Fax' ),
-//             'id'            => 'company_fax',
-//             'type'          => 'tel',
-//             'placeholder'   => '61-2-9736-2681',
-//           ),
+           'comp_fax'        => array(
+             'title'         => __( 'Company Fax' ),
+             'id'            => 'company_fax',
+             'type'          => 'tel',
+             'placeholder'   => '61-2-9736-2681',
+           ),
+           'comp_email'        => array(
+             'title'         => __( 'Company Telephone', 'devdmbootstrap3' ),
+             'id'            => 'company_email',
+             'type'          => 'email',
+             'placeholder'   => 'enquiry@maxwellit.com.au',
+           ),
            'comp_address'    => array(
              'title'         => __( 'Company Address', 'devdmbootstrap3' ),
              'id'            => 'company_address',

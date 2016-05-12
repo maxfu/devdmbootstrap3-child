@@ -1,11 +1,13 @@
 <?php global $dm_settings; ?>
 <?php global $maxwell_options; ?>
 
-<div class="container<?php if ( $maxwell_options['fluid_container'] == 'on') echo '-fluid';?> dmbs-container">
+<?php if ( $maxwell_options['header_container'] == 'on' ) : ?>
+  <div class="container<?php if ( $maxwell_options['fluid_container'] == 'on') echo '-fluid';?> dmbs-container">
+<?php endif; ?>
 
 <?php if ($dm_settings['show_header'] != 0) : ?>
 
-    <div class="row dmbs-header">
+    <div class="<?php if ( $maxwell_options['header_container'] == 'on') echo 'row ';?>dmbs-header">
 
         <?php if ( get_header_image() != '' || get_header_textcolor() != 'blank') : ?>
 
@@ -28,4 +30,8 @@
 
     </div>
 
+<?php endif; ?>
+
+<?php if ( $maxwell_options['header_container'] != 'on' ) : ?>
+  <div class="container<?php if ( $maxwell_options['fluid_container'] == 'on') echo '-fluid';?> dmbs-container">
 <?php endif; ?>
