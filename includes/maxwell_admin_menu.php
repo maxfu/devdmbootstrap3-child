@@ -114,8 +114,8 @@
 //             'type'          => 'checkbox',
 //             'text'          => __( 'Display contact information in Team Page' ),
 //           ),
-         ),
-       ),
+//         ),
+//       ),
        'section-three'   => array(
          'title'         => __( 'Business Options', 'devdmbootstrap3' ),
          'fields'        => array(
