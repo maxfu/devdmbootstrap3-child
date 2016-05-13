@@ -28,10 +28,10 @@
             <?php endif; ?>
         </div>
 
+        <?php if ( $maxwell_options['header_container'] != 'on' ) : ?>
+          <div class="clearfix"></div>
+        <?php endif; ?>
+
     </div>
 
-<?php endif; ?>
-
-<?php if ( $maxwell_options['header_container'] != 'on' ) : ?>
-  <div class="container<?php if ( $maxwell_options['fluid_container'] == 'on') echo '-fluid';?> dmbs-container">
 <?php endif; ?>

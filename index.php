@@ -1,7 +1,7 @@
+<?php global $maxwell_options; ?>
 
 <?php get_header(); ?>
 
-<?php global $maxwell_options; ?>
 <?php if( $maxwell_options['complex_header'] == 'on' ) : ?>
   <?php get_template_part('template-part', 'complexhead'); ?>
 <?php else : ?>

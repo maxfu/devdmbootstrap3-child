@@ -161,6 +161,12 @@
              'type'          => 'url',
              'placeholder'   => __( 'Link of Facebook', 'devdmbootstrap3' ),
            ),
+           'comp_googleplus' => array(
+             'title'         => __( 'Google+', 'devdmbootstrap3' ),
+             'id'            => 'company_googleplus',
+             'type'          => 'url',
+             'placeholder'   => __( 'Link of Google+', 'devdmbootstrap3' ),
+           ),
            'comp_twitter'    => array(
              'title'         => __( 'Twitter', 'devdmbootstrap3' ),
              'id'            => 'company_twitter',
