@@ -53,9 +53,15 @@
            ),
          ),
        ),
-//       'section-two'   => array(
-//         'title'         => __( 'Homepage Options', 'devdmbootstrap3' ),
-//         'fields'        => array(
+       'section-two'   => array(
+         'title'         => __( 'Website Options', 'devdmbootstrap3' ),
+         'fields'        => array(
+           'seo_keywords'    => array(
+             'title'         => __( 'SEO Keywords', 'devdmbootstrap3' ),
+             'id'            => 'seo_keywords',
+             'type'          => 'text',
+             'placeholder'   => 'Use comma to seprate.',
+           ),
 //           'act_pic'         => array(
 //             'title'         => __( 'Activity Picture' ),
 //             'id'            => 'activity_pic',
@@ -114,8 +120,8 @@
 //             'type'          => 'checkbox',
 //             'text'          => __( 'Display contact information in Team Page' ),
 //           ),
-//         ),
-//       ),
+         ),
+       ),
        'section-three'   => array(
          'title'         => __( 'Business Options', 'devdmbootstrap3' ),
          'fields'        => array(
