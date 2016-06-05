@@ -30,7 +30,7 @@
             global $dm_settings;
             if ($dm_settings['author_credits'] != 0) : ?>
                 <div class="clearfix dmbs-author-credits">
-                    <p>Copyright © 2016 <a href="#">KWL Lawyers</a>. All Rights Reserved. Built by <a href="http://www.maxwellit.com.au/">Maxwell IT Services</a>.	Theme by <a href="<?php global $developer_uri; echo esc_url($developer_uri); ?>">Danny Machal</a>. Powered by WordPress.</p>
+                    <p>Copyright © <?php auto_copyright('2015'); ?> <a href="#">Maxwell IT Services</a>. All Rights Reserved. Built by <a href="http://www.maxwellit.com.au/">Maxwell IT Services</a>.	Theme by <a href="<?php global $developer_uri; echo esc_url($developer_uri); ?>">Danny Machal</a>. Powered by WordPress.</p>
                 </div>
         <?php endif; ?>
 
