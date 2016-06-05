@@ -38,6 +38,8 @@ add_action( 'after_setup_theme', 'maxwell_after_setup_theme' );
 // BEGIN Admin Menu Pages Support
 include_once('includes/RationalOptionPages.php');
 include_once('includes/maxwell_admin_menu.php');
+include_once('includes/maxfu_custom_posts.php');
+include_once('includes/maxfu_custom_metabox.php');
 $maxwell_options = get_option( 'maxwell_options', array() );
 
 // END Admin Menu Pages Support
