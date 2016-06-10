@@ -22,6 +22,12 @@
             <h4 <?php if ( get_header_textcolor() != 'blank' ) echo 'class="custom-header-text-color"'; ?>><?php bloginfo( 'description' ); ?></h4>
           </div>
           <div class="row dmbs-top-menu">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
+              <span class="sr-only"><?php _e('Toggle navigation','devdmbootstrap3'); ?></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
             <?php wp_nav_menu( array(
               'theme_location'    => 'main_menu',
               'depth'             => 2,
@@ -31,12 +37,6 @@
               'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
               'walker'            => new wp_bootstrap_navwalker())
             ); ?>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1-collapse">
-              <span class="sr-only"><?php _e('Toggle navigation','devdmbootstrap3'); ?></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
           </div>
         </div>
       </nav>
