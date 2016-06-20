@@ -19,8 +19,11 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 if ( !function_exists( 'maxfu_custom_enqueue_scripts' ) ):
     function maxfu_custom_enqueue_scripts() {
+      wp_enqueue_style( 'bootstrap.css', 'http://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css' );
+      wp_enqueue_script( 'theme-js', 'http://maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js' );
       // Add Font Awesome stylesheet
-      wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css' );
+      wp_enqueue_style( 'font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
+      // Add Font Awesome stylesheet
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'maxfu_custom_enqueue_scripts', 10 );
@@ -39,7 +42,7 @@ add_action( 'after_setup_theme', 'maxwell_after_setup_theme' );
 include_once('includes/RationalOptionPages.php');
 include_once('includes/maxwell_admin_menu.php');
 include_once('includes/maxfu_custom_posts.php');
-include_once('includes/maxfu_custom_metabox.php');
+include_once('includes/maxfu_custom_posts.php');
 $maxwell_options = get_option( 'maxwell_options', array() );
 
 // END Admin Menu Pages Support
@@ -57,7 +60,7 @@ function add_search_box($items, $args) {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Search</h4>
+          <h4 class="modal-title">Modal Header</h4>
         </div>
         <div class="modal-body">' . $searchform . '</div>
         <div class="modal-footer">
