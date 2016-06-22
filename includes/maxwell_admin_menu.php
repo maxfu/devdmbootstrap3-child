@@ -11,38 +11,56 @@
        'section-one'   => array(
          'title'         => __( 'Layout Options', 'devdmbootstrap3' ),
          'fields'        => array(
-           'fluid_container' => array(
-             'title'         => __( 'Use Fluid Containers', 'devdmbootstrap3' ),
-             'id'            => 'fluid_container',
+           'main_fluid' => array(
+             'title'         => __( 'Fluid Main Container', 'devdmbootstrap3' ),
+             'id'            => 'main_fluid',
              'type'          => 'checkbox',
-             'text'          => __( 'Check to use full-width fluid containers on pages.', 'devdmbootstrap3' ),
+             'text'          => __( 'Check to use full-width fluid containers on main content.', 'devdmbootstrap3' ),
            ),
-           'header_container' => array(
-             'title'         => __( 'Header in main container', 'devdmbootstrap3' ),
-             'id'            => 'header_container',
+           'header_fluid' => array(
+             'title'         => __( 'Fluid Header Container', 'devdmbootstrap3' ),
+             'id'            => 'header_fluid',
              'type'          => 'checkbox',
-             'text'          => __( 'Check to put header in the main container on pages.', 'devdmbootstrap3' ),
+             'text'          => __( 'Check to put header in the main container on header.', 'devdmbootstrap3' ),
            ),
-           'footer_container' => array(
-             'title'         => __( 'Footer in main container', 'devdmbootstrap3' ),
-             'id'            => 'footer_container',
+           'footer_fluid' => array(
+             'title'         => __( 'Fluid Footer Container', 'devdmbootstrap3' ),
+             'id'            => 'footer_fluid',
              'type'          => 'checkbox',
-             'text'          => __( 'Check to put footer in the main container on pages.', 'devdmbootstrap3' ),
+             'text'          => __( 'Check to put footer in the main container on footer.', 'devdmbootstrap3' ),
            ),
-           'complex_header'  => array(
-             'title'         => __( 'Display Complex Header' ),
-             'id'            => 'complex_header',
-             'type'          => 'checkbox',
-             'text'          => __( 'Display Complex Header with Header Image and Menu in the same row. This will bypass the DmSettings Display Header.' ),
-           ),
-           'radio'           => array(
-             'title'         => __( 'Navbar Style', 'devdmbootstrap3' ),
-             'id'            => 'navebar_style',
+           'bootstrap_theme' => array(
+             'title'         => __( 'Bootstrap Theme', 'devdmbootstrap3' ),
+             'id'            => 'bootstrap_theme',
              'type'          => 'radio',
              'choices'       => array(
-               'default'    => __( 'Default style, light gray', 'devdmbootstrap3' ),
-               'inverse'    => __( 'Inverse style, almost black', 'devdmbootstrap3' ),
-               'custom'     => __( 'Customed style, can be customed', 'devdmbootstrap3' ),
+               'default'     => __( 'Default theme, light gray', 'devdmbootstrap3' ),
+               'cerulean'    => __( 'Cerulean, A calm blue sky', 'devdmbootstrap3' ),
+               'cosmo'       => __( 'Cosmo, An ode to Metro', 'devdmbootstrap3' ),
+               'cyborg'      => __( 'Cyborg, Jet black and electric blue', 'devdmbootstrap3' ),
+               'darkly'      => __( 'Darkly, Flatly in night mode', 'devdmbootstrap3' ),
+               'flatly'      => __( 'Flatly, Flat and modern', 'devdmbootstrap3' ),
+               'journal'     => __( 'Journal, Crisp like a new sheet of paper', 'devdmbootstrap3' ),
+               'lumen'       => __( 'Lumen, Light and shadow', 'devdmbootstrap3' ),
+               'paper'       => __( 'Paper, Material is the metaphor', 'devdmbootstrap3' ),
+               'readable'    => __( 'Readable, Optimized for legibility', 'devdmbootstrap3' ),
+               'sandstone'   => __( 'Sandstone, A touch of warmth', 'devdmbootstrap3' ),
+               'simplex'     => __( 'Simplex, Mini and minimalist', 'devdmbootstrap3' ),
+               'slate'       => __( 'Slate, Shades of gunmetal gray', 'devdmbootstrap3' ),
+               'spacelab'    => __( 'Spacelab, Silvery and sleek', 'devdmbootstrap3' ),
+               'superhero'   => __( 'Superhero, The brave and the blue', 'devdmbootstrap3' ),
+               'united'      => __( 'United, Ubuntu orange and unique font', 'devdmbootstrap3' ),
+               'yeti'        => __( 'Yeti, A friendly foundation', 'devdmbootstrap3' ),
+             ),
+           ),
+           'navbar_style'    => array(
+             'title'         => __( 'Navbar Style', 'devdmbootstrap3' ),
+             'id'            => 'navbar_style',
+             'type'          => 'radio',
+             'choices'       => array(
+               'default'     => __( 'Default style, light gray', 'devdmbootstrap3' ),
+               'inverse'     => __( 'Inverse style, almost black', 'devdmbootstrap3' ),
+               'custom'      => __( 'Customed style, can be customed', 'devdmbootstrap3' ),
              ),
            ),
            'menu_search'    => array(
