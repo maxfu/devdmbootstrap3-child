@@ -39,6 +39,8 @@
 
 <?php endif; ?>
 
+  </div>
 </div>
 
-<div id="dmbs-content" class="container<?php if ( $maxwell_options['main_fluid'] == 'on') echo '-fluid';?> dmbs-container">
+<div id="dmbs-content" class="clearfix">
+    <div class="container<?php if ( $maxwell_options['main_fluid'] == 'on') echo '-fluid';?> dmbs-container">
