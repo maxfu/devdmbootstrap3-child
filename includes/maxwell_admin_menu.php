@@ -68,6 +68,12 @@
              'type'          => 'checkbox',
              'text'          => __( 'Display Search on Main Menu. If thrid party menu search plugin installed, uncheck this' ),
            ),
+           'navbar_fix'    => array(
+             'title'         => __( 'Navbar Top Fixed' ),
+             'id'            => 'navbar_fix',
+             'type'          => 'checkbox',
+             'text'          => __( 'Pin Navigation.' ),
+           ),
          ),
        ),
        'section-two'   => array(

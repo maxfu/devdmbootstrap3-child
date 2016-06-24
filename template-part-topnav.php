@@ -5,7 +5,7 @@
 
     <div class="row dmbs-top-menu">
       <div class="col-md-12 dmbs-navbar">
-        <nav class="navbar navbar-<?php echo $maxwell_options['navbar_style'];?>" role="navigation">
+        <nav class="navbar navbar-<?php echo $maxwell_options['navbar_style'];?> <?php if ( $maxwell_options['navbar_fix'] == 'on') echo ' navbar-fixed-top';?>">
             <div class="container-fluid dmbs-container">
                 <div class="navbar-header">
                     <?php if ($dm_settings['show_header'] == 0) : ?>
