@@ -35,6 +35,8 @@ if ( !function_exists( 'maxfu_custom_enqueue_style' ) ):
       wp_enqueue_script( 'theme-js', 'http://maxcdn.bootstrapcdn.com/bootstrap/latest/js/bootstrap.min.js', array( 'jquery' ) );
       // Add Font Awesome stylesheet
       wp_enqueue_style( 'font-awesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
+
+      wp_enqueue_script( 'smooth-scrolling', get_stylesheet_directory_uri() . '/includes/smooth.scrolling.jquery.js', array( 'jquery' ) );
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'maxfu_custom_enqueue_style' );
