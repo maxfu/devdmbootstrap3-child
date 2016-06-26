@@ -17,8 +17,9 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 // BEGIN Admin Menu Pages Support
 include_once('includes/RationalOptionPages.php');
 include_once('includes/maxwell_admin_menu.php');
-include_once('includes/maxfu_custom_posts.php');
-include_once('includes/maxfu_custom_posts.php');
+include_once('includes/maxwell_custom_posts.php');
+include_once('includes/maxwell_custom_metabox.php');
+// include_once('includes/maxwell_theme_customizer.php');
 $maxwell_options = get_option( 'maxwell_options', array() );
 // END Admin Menu Pages Support
 
